@@ -1,8 +1,8 @@
 /* window.onload = choosePic; */
 window.addEventListener("load", choosePic);
 
-var myPix = new Array("images/logos/sylenth/Primary_black.svg", //Main Black SYLENTH logo/typeface
-"images/logos/sylenth/Primary_white.svg", //Main White SYLENTH logo/typeface
+var myPix = new Array("images/logos/sylenth/Primary_Black.svg", //Main Black SYLENTH logo/typeface
+"images/logos/sylenth/Primary_White.svg", //Main White SYLENTH logo/typeface
 "images/logos/sylenth/sourceEngine_sylenth.svg", //Source Engine Logo
 "images/logos/sylenth/ntGhost_Sylenth.svg", //NeoTokyo Source Inspired Logo
 "images/logos/sylenth/manhunt_sylenth.svg", //Manhunt Logo
