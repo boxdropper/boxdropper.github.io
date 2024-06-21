@@ -30,6 +30,12 @@ var phraseArray = new Array ("frog blast the vent core!",
 "they'll bury you in a lunchbox",
 "all your base are belong to us",
 "the sun never sets on the miku empire!",
+"proud donator to Sven Co-Op!",
+"proud donator to Hunt Down the Freeman!",
+"Allan please add details",
+"buttsauce!",
+"gaming!",
+"neon genesis evangelion",
 );
 
 function choosePhrase() {
