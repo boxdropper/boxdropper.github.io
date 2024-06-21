@@ -18,7 +18,7 @@ var myPix = new Array("images/logos/sylenth/Primary_Black.svg", //Main Black SYL
 "images/logos/sylenth/cruelty_sylenth.svg", //Cruelty Squad Styled Logo
 "images/logos/sylenth/k7_sylenth.svg", //killer7 Styled Logo
 "images/logos/sylenth/KaL2_sylenth.svg", //Kane & Lynch 2 Styled Logo
-"images/logos/sylenth/dreamcast_sylenth.svg", //Sega Dreamcast Styled Logo
+"images/logos/sylenth/dreamcast_sylenth_ver2.svg", //Sega Dreamcast Styled Logo
 );
 
 function choosePic() {
