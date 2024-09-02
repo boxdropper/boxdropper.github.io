@@ -13,6 +13,21 @@
 div {
     margin-top: 100px;
 }
+#aBlogselector {
+    color: white;
+    font-family: FuturaBT-Book, 'Futura Bk BT';
+    font-size: 175%;
+}
+#aBlogEntryselector {
+    color: white;
+    font-family: FuturaBT-Book, 'Futura Bk BT';
+    font-size: 100%;
+}
+#aBlogTransport {
+    color: #c2fe0c;
+    font-family: FuturaBT-Book, 'Futura Bk BT';
+    font-size: 100%;
+}
 #container {
     max-width: 100%;
     margin: 0 auto;
