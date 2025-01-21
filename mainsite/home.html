@@ -3,7 +3,8 @@
     <head>
         <title>SYLENTH - HOME</title>
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        <!-- splash CSS -->
+        <!-- additional CSS -->
+        <link rel="stylesheet" href="assets/css/additionalCSS.css">
         <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Meta stuff goes here -->
@@ -12,8 +13,10 @@
         <meta name="keywords" content="Sylenth, Professional Unprofessional, the sylenth channel">
         <meta name="author" content="Sylenth">
         <!-- scripts -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script src="assets/js/textMarquee.js" defer></script>
         <script src="assets/js/bannerDesign.js" defer></script>
+        <script src="assets/js/buttonSounds.js" defer></script>
         <!-- and now the main event -->
     </head>
     <body>
@@ -23,14 +26,14 @@
                     <img id="headerBG" style="position: absolute; height: 253px; width: 900px;">
                     <img id="sylenthLogos" style="position: absolute;">
                 </div>
-                <nav id="navbar">
+                <audio id="k7hover" src="assets/sounds/killer7cursor.mp3" preload="auto">Your browser does not support the <code>audio</code> element.</audio>
+                <nav id="navbar" style="height: 52px;" class="navGradient-background">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li><a href="#"><div class="navBar-home navBar-selected" id="navHomeButton"></div></a></li>
+                        <li><a href="#"><div class="navBar-about" id="navAboutButton"></div></a></li>
+                        <li><a href="#"><div class="navBar-blog" id="navBlogButton"></div></a></li>
+                        <li><a href="#"><div class="navBar-downloads" id="navDownloadsButton"></div></a></li>
+                        <li><a href="#"><div class="navBar-other" id="navOtherButton"></div></a></li>
                     </ul>
                 </nav>
             </div>
