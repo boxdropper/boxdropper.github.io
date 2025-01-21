@@ -20,7 +20,14 @@
         <!-- and now the main event -->
     </head>
     <body>
-        <div id="container"><div id="topBar" style="height: 38px;"><marquee id="marqueePhrases">if you're reading this, either you're computer is too old to run javascript fast enough, or the marquee broke!</marquee></div>
+        <audio id="bgmusic" autoplay loop preload="auto">
+            <source src="assets/sounds/tron20theme.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            var audio = document.getElementById("bgmusic");
+            audio.volume = 0.4;
+        </script>
+        <div id="container"><div id="topBar" style="height: 38px;"><marquee id="marqueePhrases" behavior="scroll" scrollamount="15" width="880px">if you're reading this, either you're computer is too old to run javascript fast enough, or the marquee broke!</marquee></div>
             <div id="headerArea">
                 <div id="header" style="height: 253px;">
                     <img id="headerBG" style="position: absolute; height: 253px; width: 900px;">
@@ -37,7 +44,7 @@
                     </ul>
                 </nav>
             </div>
-            <div id="container"><div id="topBar" style="height: 54px;"><marquee behavior="scroll" scrollamount="10">
+            <div id="container"><div id="topBar" style="height: 54px;"><marquee behavior="scroll" scrollamount="10" width="880px">
                     <img src="assets/images/buttons/88x31/00s.gif">
                     <img src="assets/images/buttons/88x31/3dot5mmfc-button.gif">
                     <img src="assets/images/buttons/88x31/3drlink.gif">
@@ -278,28 +285,31 @@
 
             <div id="flex">
                 <aside id="leftSidebar">
-                    <h2>Updates</h2>
+                    <h2>UPDATES</h2>
                     <div class="box">
-                        <p>I have recently updated this tool as of August 2022!</p>
+                        <p>New site design!!!!</p>
                         <ul style="padding-left:10px;">
-                            <li>Rewrote the JS to generate cleaner code</li>
-                            <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
-                            <li>Added a couple of new features!</li>
-                            <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
+                            <li>Using sadgirl's layout generator, thank you sadgirl.</li>
+                            <li>Made some attempts at porting stuff from the old design here, such as the marquees.</li>
+                            <li>Removed the pile of long-dead crack smoking ponys.</li>
                         </ul>
                     </div>
-                    <h2>Hi there!</h2>
-                    <h3>Other Tools</h3>
-                    <ul>
-                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
-                    </ul>
+                    <h3><span id="beat-hero"></span></h3>
+                    <script src="assets/js/beatTime.js" charset="UTF-8" type="module"></script>
+                    <span style="justify-content: center; align-items: center; display: flex;">
+                        <a href="https://www.youtube.com/channel/UCsq6aAlRhk--kzq7cl7J-Ew" target="_blank" style="padding: 3px;"><i class="fa-brands fa-youtube" style="font-size: 150%;"></i></a>
+                        <a href="https://twitter.com/NotSylenth" target="_blank" style="padding: 3px;"><i class="fa-brands fa-twitter" style="font-size: 150%;"></i></a>
+                        <a href="https://bsky.app/profile/notsylenth.bsky.social" target="_blank" style="padding: 3px;"><i class="fa-brands fa-bluesky" style="font-size: 150%;"></i></a>
+                        <a href="https://www.twitch.tv/sylenth_s" target="_blank" style="padding: 3px;"><i class="fa-brands fa-twitch" style="font-size: 150%;"></i></a>
+                        <a href="https://steamcommunity.com/id/PinkLambda/" target="_blank" style="padding: 3px;"><i class="fa-brands fa-steam" style="font-size: 150%;"></i></a>
+                        <a href="https://github.com/boxdropper" target="_blank" style="padding: 3px;"><i class="fa-brands fa-github" style="font-size: 150%;"></i></a>
+                    </span>
+                    <br>
+                    <iframe width="160" height="160" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+                    <p style="font-size: 12px;">NavLink Ads powered by dimden.dev</p>
                 </aside>
                 <main>
-                    <h1>Welcome to my Layout Maker!</h1>
+                    <h1>WELCOME TO THE SYLENTH WEBSITE!</h1>
                     <p><strong>Please read this first!</strong></p>
                     <p>This tool generates a layout that is responsive, which means it looks great on phones! Use dropdowns above to customize your layout's general features. Click the button to generate your HTML and CSS, and paste it into a file on Neocities.</p>
                     <p>Then you can replace all of the text with your own. For more customization, the CSS code has comments to explain what each part changes. Please read through the code - even if you have no idea what it means.</p>
@@ -314,29 +324,11 @@
 
                 </main>
                 <aside id="rightSidebar">
-                    <h2>Updates</h2>
-                    <div class="box">
-                        <p>I have recently updated this tool as of August 2022!</p>
-                        <ul style="padding-left:10px;">
-                            <li>Rewrote the JS to generate cleaner code</li>
-                            <li>Rewrote the CSS in a way that hopefully makes much more sense to edit</li>
-                            <li>Added a couple of new features!</li>
-                            <li>Old version is still available <a href="old.html" target="_blank">here</a></li>
-                        </ul>
-                    </div>
-                    <h2>Hi there!</h2>
-                    <h3>Other Tools</h3>
-                    <ul>
-                        <li><a href="https://sadgrlonline.github.io/html-cheatsheet/" target="_blank">HTML Cheatsheet</a>
-                        </li><li><a href="/sadgrl/webmastery/webmaster-links.html" target="_blank">Webmaster Links</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/tiledbgs.html" target="_blank">Tiled BGs</a></li>
-                        <li><a href="/sadgrl/webmastery/downloads/fonts.html" target="_blank">Fonts</a></li>
-                        <li><a href="/sadgrl/projects/ideas/" target="_blank">Site Ideas</a></li>
-
-                    </ul>
+                    <img src="assets/images/bannerAds/windowsmessenger.gif">
+                    <img src="assets/images/bannerAds/conduits-ad.gif" width="100%">
                 </aside>
             </div>
-            <footer id="footer">CC0 Public Domain, 2022</footer>
+            <footer id="footer">This website was made possible thanks to sadgirl's layout generator.</footer>
         </div>
         <!-- THIS IS THE CSS !-->
         <style>
@@ -428,7 +420,7 @@
             /* the area below is for all links on your page
     EXCEPT for the navigation */
             #container a {
-                color: #ED64F5;
+                color: #ffffff;
                 font-weight: bold;
                 /* if you want to remove the underline
       you can add a line below here that says:
@@ -492,7 +484,7 @@
     if you want to style them separately,
     create styles for #leftSidebar and #rightSidebar */
             aside {
-                background-color: #241445;
+                background-color: #000000b6;
                 width: 200px;
                 padding: 20px;
                 font-size: smaller;
@@ -503,7 +495,7 @@
             /* this is the color of the main content area,
     between the sidebars! */
             main {
-                background-color: #43256E;
+                background-color: #00000077;
                 flex: 1;
                 padding: 20px;
                 order: 2;
@@ -524,7 +516,7 @@
             }
 
             footer {
-                background-color: #13092D;
+                background-color: #000000;
                 /* background color for footer */
                 width: 100%;
                 height: 40px;
@@ -536,7 +528,8 @@
             h1,
             h2,
             h3 {
-                color: #ED64F5;
+                color: #ffffff;
+                font-family: "Futura BK";
             }
 
             h1 {
@@ -550,8 +543,8 @@
 
             /* this is just a cool box, it's the darker colored one */
             .box {
-                background-color: #13092D;
-                border: 1px solid #ED64F5;
+                background-color: #000000;
+                border: 1px solid #ffffff;
                 padding: 10px;
             }
 

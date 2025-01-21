@@ -4,15 +4,15 @@ navBlogBtn = document.getElementById('navBlogButton'),
 navDownloadsBtn = document.getElementById('navDownloadsButton'),
 navOtherBtn = document.getElementById('navOtherButton'),
 heartbeat = document.getElementById('k7hover'),
-audios = document.querySelectorAll('audio');
-console.log(audios);
+bgmusic = document.getElementById("bgmusic");
+console.log(heartbeat);
 
+window.addEventListener("load", function() {
+    bgmusic.play();
+}, false);
 
 navHomeBtn.addEventListener('mouseover', function() {
-[].forEach.call(audios, function(audio) {
-  // do whatever
-  audio.play();
-});
+    heartbeat.play();
 }, false);
 
 navAboutBtn.addEventListener('mouseover', function() {
