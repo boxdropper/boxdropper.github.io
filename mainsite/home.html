@@ -20,12 +20,17 @@
         <!-- and now the main event -->
     </head>
     <body>
-        <audio id="bgmusic" autoplay loop preload="auto">
+        <audio id="bgmusic" loop preload="auto">
             <source src="assets/sounds/tron20theme.mp3" type="audio/mpeg">
         </audio>
         <script>
+            document.addEventListener("click", playMusic);
             var audio = document.getElementById("bgmusic");
             audio.volume = 0.4;
+
+            function playMusic() {
+                audio.play();
+            }
         </script>
         <div id="container"><div id="topBar" style="height: 38px;"><marquee id="marqueePhrases" behavior="scroll" scrollamount="15" width="880px">if you're reading this, either you're computer is too old to run javascript fast enough, or the marquee broke!</marquee></div>
             <div id="headerArea">
@@ -307,6 +312,7 @@
                     <br>
                     <iframe width="160" height="160" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
                     <p style="font-size: 12px;">NavLink Ads powered by dimden.dev</p>
+                    <p style="font-size: 10px;">Hey, if you don't hear any music or sound effects, try clicking or something idk.</p>
                 </aside>
                 <main>
                     <h1>WELCOME TO THE SYLENTH WEBSITE!</h1>
@@ -336,8 +342,8 @@
     the images as variables */
 
             :root {
-                --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
-                --body-bg-image: url('https://sadhost.neocities.org/images/tiles/purplesky.gif');
+                --header-image: url('assets/images/homeBanner/backgrounds/missing.webp');
+                --body-bg-image: url('assets/images/backgrounds/winMetal.jpg');
 
                 /* colors */
                 --content: #43256E;
@@ -383,7 +389,7 @@
                 margin: 0;
                 background-color: #08031A;
                 /* you can delete the line below if you'd prefer to not use an image */
-                background-size: 65px;
+                background-size: auto;
                 color: #fceaff;
                 background-image: var(--body-bg-image);
             }
