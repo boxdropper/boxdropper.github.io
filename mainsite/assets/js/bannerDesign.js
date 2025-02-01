@@ -13,6 +13,9 @@ var logoImages = new Array("assets/images/homeBanner/logos/SYLENTH.webp",
 "assets/images/homeBanner/logos/neotokyo.webp",
 "assets/images/homeBanner/logos/pdzero.webp",
 "assets/images/homeBanner/logos/source.webp",
+"assets/images/homeBanner/logos/marathon.webp",
+"assets/images/homeBanner/logos/shogo.webp",
+"assets/images/homeBanner/logos/persona3.webp",
 );
 
 var bgImages = new Array("assets/images/homeBanner/backgrounds/SYLENTH.webp",
@@ -27,6 +30,9 @@ var bgImages = new Array("assets/images/homeBanner/backgrounds/SYLENTH.webp",
     "assets/images/homeBanner/backgrounds/neotokyo.webp",
     "assets/images/homeBanner/backgrounds/pdzero.webp",
     "assets/images/homeBanner/backgrounds/source.webp",
+    "assets/images/homeBanner/backgrounds/marathon.webp",
+    "assets/images/homeBanner/backgrounds/shogo.webp",
+    "assets/images/homeBanner/backgrounds/persona3.webp",
     );
 
 function choosePic() {
