@@ -16,6 +16,7 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
         <script src="assets/js/textMarquee.js" defer></script>
         <script src="assets/js/bannerDesign.js" defer></script>
+        <script src="assets/js/updateBox.js" defer></script>
         <!-- and now the main event -->
     </head>
     <body>
@@ -25,7 +26,7 @@
         <script>
             document.addEventListener("click", playMusic);
             var audio = document.getElementById("bgmusic");
-            audio.volume = 0.4;
+            audio.volume = 0.1;
 
             function playMusic() {
                 audio.play();
@@ -62,7 +63,7 @@
             }
 
             var hoversound=createsoundbite("assets/sounds/killer7cursor.mp3");
-            hoversound.volume = 0.5
+            hoversound.volume = 0.3
         </script>
         <div id="container"><div id="topBar" style="height: 38px;"><marquee id="marqueePhrases" behavior="scroll" scrollamount="15" width="880px">if you're reading this, either you're computer is too old to run javascript fast enough, or the marquee broke!</marquee></div>
             <div id="headerArea">
@@ -74,9 +75,9 @@
                     <ul>
                         <li><a href="#"><div class="navBar-home navBar-selected" onmouseover="hoversound.playclip()"></div></a></li>
                         <li><a href="#"><div class="navBar-about" onmouseover="hoversound.playclip()"></div></a></li>
-                        <li><a href="#"><div class="navBar-blog" onmouseover="hoversound.playclip()"></div></a></li>
+                        <li><a href="#"><div class="navBar-blog" onmouseover="hoversound.playclip()" onclick="alert('Oi, this part of the website aint done yet.\nGo on, SCRAM!')"></div></a></li>
                         <li><a href="#"><div class="navBar-downloads" onmouseover="hoversound.playclip()"></div></a></li>
-                        <li><a href="#"><div class="navBar-other" onmouseover="hoversound.playclip()"></div></a></li>
+                        <li><a href="#"><div class="navBar-other" onmouseover="hoversound.playclip()" onclick="alert('Oi, this part of the website aint done yet.\nGo on, SCRAM!')"></div></a></li>
                     </ul>
                 </nav>
             </div>
@@ -323,15 +324,12 @@
                 <aside id="leftSidebar">
                     <h2>UPDATES</h2>
                     <div class="box">
-                        <p>New site design!!!!</p>
-                        <ul style="padding-left:10px;">
-                            <li>Using sadgrl's layout generator, thank you sadgrl.</li>
-                            <li>Made some attempts at porting stuff from the old design here, such as the marquees.</li>
-                            <li>Removed the pile of long-dead crack smoking ponys.</li>
+                        <p id="updateTitle"></p>
+                        <ul style="padding-left:10px;" id="updateList">
                         </ul>
                     </div>
                     <h3><span id="beat-hero"></span></h3>
-                    <script src="assets/js/beatTime.js" charset="UTF-8" type="module"></script>
+                    <script src="assets/js/beatTime.js" charset="UTF-8" type="module"></script> <!-- This shit won't appear when viewing the file, only when deployed will it appear -->
                     <span style="justify-content: center; align-items: center; display: flex;">
                         <a href="https://www.youtube.com/channel/UCsq6aAlRhk--kzq7cl7J-Ew" target="_blank" style="padding: 3px;"><i class="fa-brands fa-youtube" style="font-size: 150%;"></i></a>
                         <a href="https://twitter.com/NotSylenth" target="_blank" style="padding: 3px;"><i class="fa-brands fa-twitter" style="font-size: 150%;"></i></a>
@@ -374,7 +372,7 @@
 
             :root {
                 --header-image: url('assets/images/homeBanner/backgrounds/missing.webp');
-                --body-bg-image: url('assets/images/backgrounds/winMetal.jpg');
+                --body-bg-image: url('assets/images/backgrounds/num.gif');
 
                 /* colors */
                 --content: #43256E;
@@ -423,6 +421,7 @@
                 background-size: auto;
                 color: #fceaff;
                 background-image: var(--body-bg-image);
+                background-attachment: fixed;
             }
 
             * {
