@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Futura BK";
+    src: url(../../../assets/fonts/FuturaBookfont.ttf);
+}
+
+.navBar-home {
+    width: 120px;
+    height: 30px;
+    background: url(../images/navButtons/navHome.webp) no-repeat;
+}
+
+.navBar-about {
+    width: 140px;
+    height: 30px;
+    background: url(../images/navButtons/navAbout.webp) no-repeat;
+}
+
+.navBar-blog {
+    width: 120px;
+    height: 30px;
+    background: url(../images/navButtons/navBlog.webp) no-repeat;
+}
+
+.navBar-downloads {
+    width: 222px;
+    height: 30px;
+    background: url(../images/navButtons/navDownloads.webp) no-repeat;
+}
+
+.navBar-other {
+    width: 140px;
+    height: 30px;
+    background: url(../images/navButtons/navOther.webp) no-repeat;
+}
+
+.navBar-selected {
+    background-position: 0px -60px;
+}
+
+.navBar-home:hover {
+    background-position: 0px -30px;
+}
+
+.navBar-about:hover {
+    background-position: 0px -30px;
+}
+
+.navBar-blog:hover {
+    background-position: 0px -30px;
+}
+
+.navBar-downloads:hover {
+    background-position: 0px -30px;
+}
+
+.navBar-other:hover {
+    background-position: 0px -30px;
+}
+
+.navGradient-background {
+    background: linear-gradient(300deg,#000000,#30001a,#000000);
+    background-size: 180% 180%;
+    animation: gradient-animation 24s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}

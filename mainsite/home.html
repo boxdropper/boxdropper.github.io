@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SYLENTH - HOME</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+        <!-- additional CSS -->
+        <link rel="stylesheet" href="assets/css/additionalCSS.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Meta stuff goes here -->
+        <meta charset="UTF-8">
+        <meta name="description" content="website sylenth">
+        <meta name="keywords" content="Sylenth, Professional Unprofessional, the sylenth channel">
+        <meta name="author" content="Sylenth">
+        <!-- scripts -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="assets/js/textMarquee.js" defer></script>
+        <script src="assets/js/bannerDesign.js" defer></script>
+        <script src="assets/js/updateBox.js" defer></script>
+        <!-- and now the main event -->
+    </head>
+    <body>
+        <audio id="bgmusic" loop preload="auto">
+            <source src="assets/sounds/tron20theme.mp3" type="audio/mpeg">
+        </audio>
+        <script>
+            document.addEventListener("click", playMusic);
+            var audio = document.getElementById("bgmusic");
+            audio.volume = 0.1;
+
+            function playMusic() {
+                audio.play();
+            }
+        </script>
+        <script>
+            // Script pulled from megidolaon.gay
+
+            var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
+                "mp3": "audio/mpeg"
+            }
+
+            function createsoundbite(sound){
+                var html5audio=document.createElement('audio')
+                if (html5audio.canPlayType){ //check support for HTML5 audio
+                    for (var i=0; i<arguments.length; i++){
+                        var sourceel=document.createElement('source')
+                        sourceel.setAttribute('src', arguments[i])
+                        if (arguments[i].match(/\.(\w+)$/i))
+                            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
+                        html5audio.appendChild(sourceel)
+                    }
+                    html5audio.load()
+                    html5audio.playclip=function(){
+                        html5audio.pause()
+                        html5audio.currentTime=0
+                        html5audio.play()
+                    }
+                    return html5audio
+                }
+                else{
+                    return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
+                }
+            }
+
+            var hoversound=createsoundbite("assets/sounds/killer7cursor.mp3");
+            hoversound.volume = 0.3
+        </script>
+        <div id="container"><div id="topBar" style="height: 38px;"><marquee id="marqueePhrases" behavior="scroll" scrollamount="15" width="880px">if you're reading this, either you're computer is too old to run javascript fast enough, or the marquee broke!</marquee></div>
+            <div id="headerArea">
+                <div id="header" style="height: 253px;">
+                    <img id="headerBG" style="position: absolute; height: 253px; width: 900px;">
+                    <img id="sylenthLogos" style="position: absolute;">
+                </div>
+                <nav id="navbar" style="height: 52px;" class="navGradient-background">
+                    <ul>
+                        <li><a href="#"><div class="navBar-home navBar-selected" onmouseover="hoversound.playclip()"></div></a></li>
+                        <li><a href="about.html"><div class="navBar-about" onmouseover="hoversound.playclip()"></div></a></li>
+                        <li><a href="#"><div class="navBar-blog" onmouseover="hoversound.playclip()" onclick="alert('Oi, this part of the website aint done yet.\nGo on, SCRAM!')"></div></a></li>
+                        <li><a href="downloads.html"><div class="navBar-downloads" onmouseover="hoversound.playclip()"></div></a></li>
+                        <li><a href="#"><div class="navBar-other" onmouseover="hoversound.playclip()" onclick="alert('Oi, this part of the website aint done yet.\nGo on, SCRAM!')"></div></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="container"><div id="topBar" style="height: 54px;"><marquee behavior="scroll" scrollamount="10" width="880px">
+                    <img src="assets/images/buttons/88x31/00s.gif">
+                    <img src="assets/images/buttons/88x31/3dot5mmfc-button.gif">
+                    <img src="assets/images/buttons/88x31/3drlink.gif">
+                    <img src="assets/images/buttons/88x31/7zip.gif">
+                    <img src="assets/images/buttons/88x31/12.gif">
+                    <img src="assets/images/buttons/88x31/18.gif">
+                    <img src="assets/images/buttons/88x31/19.gif">
+                    <img src="assets/images/buttons/88x31/80s.gif">
+                    <img src="assets/images/buttons/88x31/77granddad.png">
+                    <img src="assets/images/buttons/88x31/88x31-your-ad.gif">
+                    <img src="assets/images/buttons/88x31/98plusani.gif">
+                    <img src="assets/images/buttons/88x31/119.gif">
+                    <img src="assets/images/buttons/88x31/128.gif">
+                    <img src="assets/images/buttons/88x31/1080p.gif">
+                    <img src="assets/images/buttons/88x31/2001.gif">
+                    <img src="assets/images/buttons/88x31/a2view.gif">
+                    <img src="assets/images/buttons/88x31/accursed-farms-alien-blink.gif">
+                    <img src="assets/images/buttons/88x31/addchannel.gif">
+                    <img src="assets/images/buttons/88x31/adilene.png">
+                    <img src="assets/images/buttons/88x31/adobe_asanim1.gif">
+                    <img src="assets/images/buttons/88x31/adobe_atmosphere.gif">
+                    <img src="assets/images/buttons/88x31/adobe_authorware.gif">
+                    <img src="assets/images/buttons/88x31/adobe_dreamweaver.gif">
+                    <img src="assets/images/buttons/88x31/adobe_fireworks.gif">
+                    <img src="assets/images/buttons/88x31/adobe_flash_get.gif">
+                    <img src="assets/images/buttons/88x31/adobe_svg.gif">
+                    <img src="assets/images/buttons/88x31/ah.gif">
+                    <img src="assets/images/buttons/88x31/aimlink.gif">
+                    <img src="assets/images/buttons/88x31/altavista.gif">
+                    <img src="assets/images/buttons/88x31/amatsuki.gif">
+                    <img src="assets/images/buttons/88x31/amazon-88x31.gif">
+                    <img src="assets/images/buttons/88x31/amd_powered.gif">
+                    <img src="assets/images/buttons/88x31/amiga.gif">
+                    <img src="assets/images/buttons/88x31/amigaamp.gif">
+                    <img src="assets/images/buttons/88x31/angelfire.gif">
+                    <img src="assets/images/buttons/88x31/angellovebox.gif">
+                    <img src="assets/images/buttons/88x31/ani_passale.gif">
+                    <img src="assets/images/buttons/88x31/anime100.gif">
+                    <img src="assets/images/buttons/88x31/anime100red.gif">
+                    <img src="assets/images/buttons/88x31/animeland.gif">
+                    <img src="assets/images/buttons/88x31/animexchange.gif">
+                    <img src="assets/images/buttons/88x31/antinft.gif">
+                    <img src="assets/images/buttons/88x31/aol_instant3.gif">
+                    <img src="assets/images/buttons/88x31/aqnow.gif">
+                    <img src="assets/images/buttons/88x31/arizona.gif">
+                    <img src="assets/images/buttons/88x31/armorgames.gif">
+                    <img src="assets/images/buttons/88x31/asus-clr_19970504.gif">
+                    <img src="assets/images/buttons/88x31/atomicdusticon.gif">
+                    <img src="assets/images/buttons/88x31/babylonfive.gif">
+                    <img src="assets/images/buttons/88x31/bann_et.gif">
+                    <img src="assets/images/buttons/88x31/banner_mai.gif">
+                    <img src="assets/images/buttons/88x31/banshee.gif">
+                    <img src="assets/images/buttons/88x31/battlegrounds.gif">
+                    <img src="assets/images/buttons/88x31/biganime.gif">
+                    <img src="assets/images/buttons/88x31/blender.gif">
+                    <img src="assets/images/buttons/88x31/blender_link4.gif">
+                    <img src="assets/images/buttons/88x31/blink-0.gif">
+                    <img src="assets/images/buttons/88x31/bluepantsu.gif">
+                    <img src="assets/images/buttons/88x31/blue-vmu.gif">
+                    <img src="assets/images/buttons/88x31/bob.gif">
+                    <img src="assets/images/buttons/88x31/button_aq2.gif">
+                    <img src="assets/images/buttons/88x31/button_tupachq1.gif">
+                    <img src="assets/images/buttons/88x31/button7.gif">
+                    <img src="assets/images/buttons/88x31/cnet.gif">
+                    <img src="assets/images/buttons/88x31/cnetbuyit.gif">
+                    <img src="assets/images/buttons/88x31/coke.gif">
+                    <img src="assets/images/buttons/88x31/color.gif">
+                    <img src="assets/images/buttons/88x31/crazyfrog.gif">
+                    <img src="assets/images/buttons/88x31/csnation2.gif">
+                    <img src="assets/images/buttons/88x31/csphl_link.gif">
+                    <img src="assets/images/buttons/88x31/csplayer.gif">
+                    <img src="assets/images/buttons/88x31/cuteanimegirls.gif">
+                    <img src="assets/images/buttons/88x31/dball2k.gif">
+                    <img src="assets/images/buttons/88x31/dc-france-mini.gif">
+                    <img src="assets/images/buttons/88x31/debian.gif">
+                    <img src="assets/images/buttons/88x31/defcon1.gif">
+                    <img src="assets/images/buttons/88x31/deviantart8.gif">
+                    <img src="assets/images/buttons/88x31/diff-now.gif">
+                    <img src="assets/images/buttons/88x31/directxnow.gif">
+                    <img src="assets/images/buttons/88x31/disccontent.gif">
+                    <img src="assets/images/buttons/88x31/discord-no-way.gif">
+                    <img src="assets/images/buttons/88x31/dnfbtn.gif">
+                    <img src="assets/images/buttons/88x31/doingyourmom.gif">
+                    <img src="assets/images/buttons/88x31/dolby_digital.gif">
+                    <img src="assets/images/buttons/88x31/doombut.gif">
+                    <img src="assets/images/buttons/88x31/dreamcast.gif">
+                    <img src="assets/images/buttons/88x31/drpepper.gif">
+                    <img src="assets/images/buttons/88x31/duke4net.gif">
+                    <img src="assets/images/buttons/88x31/dukenow.gif">
+                    <img src="assets/images/buttons/88x31/dukeworld.gif">
+                    <img src="assets/images/buttons/88x31/e16.jpg">
+                    <img src="assets/images/buttons/88x31/e21.gif">
+                    <img src="assets/images/buttons/88x31/e22.gif">
+                    <img src="assets/images/buttons/88x31/ebay.gif">
+                    <img src="assets/images/buttons/88x31/ecchi.gif">
+                    <img src="assets/images/buttons/88x31/eduke32.gif">
+                    <img src="assets/images/buttons/88x31/emulate.gif">
+                    <img src="assets/images/buttons/88x31/EpicBlazedButton.png">
+                    <img src="assets/images/buttons/88x31/e-scp.gif">
+                    <img src="assets/images/buttons/88x31/evangelion.gif">
+                    <img src="assets/images/buttons/88x31/expressbtn.gif">
+                    <img src="assets/images/buttons/88x31/f1.jpg">
+                    <img src="assets/images/buttons/88x31/facebook.gif">
+                    <img src="assets/images/buttons/88x31/falcom.gif">
+                    <img src="assets/images/buttons/88x31/falink.gif">
+                    <img src="assets/images/buttons/88x31/farcry.gif">
+                    <img src="assets/images/buttons/88x31/fattony.gif">
+                    <img src="assets/images/buttons/88x31/ffmpeg.gif">
+                    <img src="assets/images/buttons/88x31/ffrediscover.gif">
+                    <img src="assets/images/buttons/88x31/finger-logo-me-girl.gif">
+                    <img src="assets/images/buttons/88x31/finger-logo-people.gif">
+                    <img src="assets/images/buttons/88x31/flandon.gif">
+                    <img src="assets/images/buttons/88x31/folder2.gif">
+                    <img src="assets/images/buttons/88x31/foobar2000.gif">
+                    <img src="assets/images/buttons/88x31/freebuttons.gif">
+                    <img src="assets/images/buttons/88x31/garcade.gif">
+                    <img src="assets/images/buttons/88x31/gb.gif">
+                    <img src="assets/images/buttons/88x31/gc_akageo.gif">
+                    <img src="assets/images/buttons/88x31/gc_japan.gif">
+                    <img src="assets/images/buttons/88x31/getquake.gif">
+                    <img src="assets/images/buttons/88x31/gettf.gif">
+                    <img src="assets/images/buttons/88x31/getwc.gif">
+                    <img src="assets/images/buttons/88x31/getwmp7.gif">
+                    <img src="assets/images/buttons/88x31/getwolfnow.gif">
+                    <img src="assets/images/buttons/88x31/gfaqs.gif">
+                    <img src="assets/images/buttons/88x31/gh-pages-bo.gif">
+                    <img src="assets/images/buttons/88x31/gimp.gif">
+                    <img src="assets/images/buttons/88x31/girlgrade3.gif">
+                    <img src="assets/images/buttons/88x31/gmail.gif">
+                    <img src="assets/images/buttons/88x31/gplv3.gif">
+                    <img src="assets/images/buttons/88x31/graphicdesign.gif">
+                    <img src="assets/images/buttons/88x31/gta_shotgames_link.gif">
+                    <img src="assets/images/buttons/88x31/guideworld.gif">
+                    <img src="assets/images/buttons/88x31/half-life.gif">
+                    <img src="assets/images/buttons/88x31/hatsunemiku1.gif">
+                    <img src="assets/images/buttons/88x31/hotmail.gif">
+                    <img src="assets/images/buttons/88x31/ie3.gif">
+                    <img src="assets/images/buttons/88x31/internetarchive.gif">
+                    <img src="assets/images/buttons/88x31/ipv6.gif">
+                    <img src="assets/images/buttons/88x31/irfan.gif">
+                    <img src="assets/images/buttons/88x31/jamiroquai.gif">
+                    <img src="assets/images/buttons/88x31/java_green_button.gif">
+                    <img src="assets/images/buttons/88x31/js.gif">
+                    <img src="assets/images/buttons/88x31/kawaiibutton.gif">
+                    <img src="assets/images/buttons/88x31/kemofure.gif">
+                    <img src="assets/images/buttons/88x31/koolaid.gif">
+                    <img src="assets/images/buttons/88x31/kys_now.gif">
+                    <img src="assets/images/buttons/88x31/lambda2.gif">
+                    <img src="assets/images/buttons/88x31/logo_wing.gif">
+                    <img src="assets/images/buttons/88x31/logo4-ebay.gif">
+                    <img src="assets/images/buttons/88x31/mame.gif">
+                    <img src="assets/images/buttons/88x31/mentos.gif">
+                    <img src="assets/images/buttons/88x31/microsoft.gif">
+                    <img src="assets/images/buttons/88x31/miku.gif">
+                    <img src="assets/images/buttons/88x31/minecraft.gif">
+                    <img src="assets/images/buttons/88x31/mirrorsedge.gif">
+                    <img src="assets/images/buttons/88x31/modarchive.gif">
+                    <img src="assets/images/buttons/88x31/moddb.gif">
+                    <img src="assets/images/buttons/88x31/moon12.gif">
+                    <img src="assets/images/buttons/88x31/mpayne.gif">
+                    <img src="assets/images/buttons/88x31/msbuiltwith.gif">
+                    <img src="assets/images/buttons/88x31/msfrontpage.gif">
+                    <img src="assets/images/buttons/88x31/msfrontpage2000.gif">
+                    <img src="assets/images/buttons/88x31/msmp9.gif">
+                    <img src="assets/images/buttons/88x31/msn.gif">
+                    <img src="assets/images/buttons/88x31/msoffice97.gif">
+                    <img src="assets/images/buttons/88x31/mswinmediaplayer8.gif">
+                    <img src="assets/images/buttons/88x31/mundomanga.gif">
+                    <img src="assets/images/buttons/88x31/nc_tokyo2.gif">
+                    <img src="assets/images/buttons/88x31/netnow3.gif">
+                    <img src="assets/images/buttons/88x31/newgrounds.gif">
+                    <img src="assets/images/buttons/88x31/nokia64.gif">
+                    <img src="assets/images/buttons/88x31/norton2.gif">
+                    <img src="assets/images/buttons/88x31/nvidia.gif">
+                    <img src="assets/images/buttons/88x31/opengl.gif">
+                    <img src="assets/images/buttons/88x31/ostan.gif">
+                    <img src="assets/images/buttons/88x31/paintnet.gif">
+                    <img src="assets/images/buttons/88x31/pcgamer.gif">
+                    <img src="assets/images/buttons/88x31/pdc_promobutton.gif">
+                    <img src="assets/images/buttons/88x31/pepsi.gif">
+                    <img src="assets/images/buttons/88x31/pgn.gif">
+                    <img src="assets/images/buttons/88x31/php.gif">
+                    <img src="assets/images/buttons/88x31/planet_half-life.gif">
+                    <img src="assets/images/buttons/88x31/ppc.gif">
+                    <img src="assets/images/buttons/88x31/promote2.gif">
+                    <img src="assets/images/buttons/88x31/proud_of_my_son.gif">
+                    <img src="assets/images/buttons/88x31/q_now_v3.gif">
+                    <img src="assets/images/buttons/88x31/q2_button.gif">
+                    <img src="assets/images/buttons/88x31/q4psb.gif">
+                    <img src="assets/images/buttons/88x31/qbutton1.gif">
+                    <img src="assets/images/buttons/88x31/qoole.gif">
+                    <img src="assets/images/buttons/88x31/qtime4.gif">
+                    <img src="assets/images/buttons/88x31/quake_ctf_now30.gif">
+                    <img src="assets/images/buttons/88x31/quake-button1.gif">
+                    <img src="assets/images/buttons/88x31/quakeworldnow.gif">
+                    <img src="assets/images/buttons/88x31/quark now.gif">
+                    <img src="assets/images/buttons/88x31/ralseismokingadart.gif">
+                    <img src="assets/images/buttons/88x31/rar_whit_move.gif">
+                    <img src="assets/images/buttons/88x31/real.gif">
+                    <img src="assets/images/buttons/88x31/real_play.gif">
+                    <img src="assets/images/buttons/88x31/realarcade.gif">
+                    <img src="assets/images/buttons/88x31/realjukeboxsti.gif">
+                    <img src="assets/images/buttons/88x31/rorikon.gif">
+                    <img src="assets/images/buttons/88x31/sadpartyqueen.gif">
+                    <img src="assets/images/buttons/88x31/sailormoonmicrobar.gif">
+                    <img src="assets/images/buttons/88x31/sears.gif">
+                    <img src="assets/images/buttons/88x31/sega_support.gif">
+                    <img src="assets/images/buttons/88x31/shenmuedojo.gif">
+                    <img src="assets/images/buttons/88x31/shockwave.gif">
+                    <img src="assets/images/buttons/88x31/shockwave2.gif">
+                    <img src="assets/images/buttons/88x31/shrek.png">
+                    <img src="assets/images/buttons/88x31/sm_fever_button.gif">
+                    <img src="assets/images/buttons/88x31/smoke.gif">
+                    <img src="assets/images/buttons/88x31/softcute.gif">
+                    <img src="assets/images/buttons/88x31/spacelink.gif">
+                    <img src="assets/images/buttons/88x31/sshock2.gif">
+                    <img src="assets/images/buttons/88x31/stationradio.gif">
+                    <img src="assets/images/buttons/88x31/steam.gif">
+                    <img src="assets/images/buttons/88x31/svenbutton.gif">
+                    <img src="assets/images/buttons/88x31/sweethard666msn.gif">
+                    <img src="assets/images/buttons/88x31/transnow2.gif">
+                    <img src="assets/images/buttons/88x31/tummy.gif">
+                    <img src="assets/images/buttons/88x31/twitterbutton.gif">
+                    <img src="assets/images/buttons/88x31/vesterweb.gif">
+                    <img src="assets/images/buttons/88x31/vocaloid.gif">
+                    <img src="assets/images/buttons/88x31/vrml.gif">
+                    <img src="assets/images/buttons/88x31/vscbutton.gif">
+                    <img src="assets/images/buttons/88x31/wgggggggg.gif">
+                    <img src="assets/images/buttons/88x31/wii.gif">
+                    <img src="assets/images/buttons/88x31/winamp-miniban.gif">
+                    <img src="assets/images/buttons/88x31/windows_media_player.gif">
+                    <img src="assets/images/buttons/88x31/winxp.gif">
+                    <img src="assets/images/buttons/88x31/wxwidgets.gif">
+                    <img src="assets/images/buttons/88x31/xp.gif">
+                    <img src="assets/images/buttons/88x31/y2k.gif">
+                    <img src="assets/images/buttons/88x31/zettai.gif">
+            </marquee></div>
+
+            <div id="flex">
+                <aside id="leftSidebar">
+                    <h2>UPDATES</h2>
+                    <div class="box">
+                        <p id="updateTitle"></p>
+                        <ul style="padding-left:10px;" id="updateList">
+                        </ul>
+                    </div>
+                    <h3><span id="beat-hero"></span></h3>
+                    <script src="assets/js/beatTime.js" charset="UTF-8" type="module"></script> <!-- This shit won't appear when viewing the file, only when deployed will it appear -->
+                    <span style="justify-content: center; align-items: center; display: flex;">
+                        <a href="https://www.youtube.com/channel/UCsq6aAlRhk--kzq7cl7J-Ew" target="_blank" style="padding: 3px;"><i class="fa-brands fa-youtube" style="font-size: 150%;"></i></a>
+                        <a href="https://twitter.com/NotSylenth" target="_blank" style="padding: 3px;"><i class="fa-brands fa-twitter" style="font-size: 150%;"></i></a>
+                        <a href="https://bsky.app/profile/notsylenth.bsky.social" target="_blank" style="padding: 3px;"><i class="fa-brands fa-bluesky" style="font-size: 150%;"></i></a>
+                        <a href="https://www.twitch.tv/sylenth_s" target="_blank" style="padding: 3px;"><i class="fa-brands fa-twitch" style="font-size: 150%;"></i></a>
+                        <a href="https://steamcommunity.com/id/PinkLambda/" target="_blank" style="padding: 3px;"><i class="fa-brands fa-steam" style="font-size: 150%;"></i></a>
+                        <a href="https://github.com/boxdropper" target="_blank" style="padding: 3px;"><i class="fa-brands fa-github" style="font-size: 150%;"></i></a>
+                    </span>
+                    <br>
+                    <iframe width="160" height="160" style="border:none" src="https://dimden.neocities.org/navlink/" name="neolink"></iframe>
+                    <p style="font-size: 12px;">NavLink Ads powered by dimden.dev</p>
+                    <p style="font-size: 10px;">Hey, if you don't hear any music or sound effects, try clicking or something idk.</p>
+                </aside>
+                <main>
+                    <h1>WELCOME TO THE SYLENTH WEBSITE!</h1>
+                    <p>This page acts for any online passers by to learn more about SYLENTH, a self-titled "professional unprofessional" who was born and raised within Northern Ireland as punishment for the crimes of his past life.</p>
+                    <p>Currently, SYLENTH is in deep, studying Games Design so that one day he can make his own super ambitious video game based on the imaginary universe he thought of and built in his head improvisationally for around 2 years and counting.</p>
+                    <p>You can also read through the personal blog of SYLENTH and learn more about him, what size shoe he wears, what he ate at that resturant 2 years ago, will he ever clean out the basement, how much time he's wasted, his deep and gripping opinions on the current price of oregano, etc.</p>
+                    <p>When you're done there, you can check out the downloads page where you can find content that you can install onto your own personal computer! Safety not Guaranteed.</p>
+                    <p>There's also the OTHER page, don't know what goes on in there, enter at your own risk.</p>
+
+
+                </main>
+                <aside id="rightSidebar">
+                    <img src="assets/images/bannerAds/windowsmessenger.gif">
+                    <img src="assets/images/bannerAds/conduits-ad.gif" width="100%">
+                </aside>
+            </div>
+            <footer id="footer">This website was made possible thanks to sadgrl's layout generator.</footer>
+        </div>
+        <!-- THIS IS THE CSS !-->
+        <style>
+            /* user styles */
+
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {
+                --header-image: url('assets/images/homeBanner/backgrounds/missing.webp');
+                --body-bg-image: url('assets/images/backgrounds/num.gif');
+
+                /* colors */
+                --content: #43256E;
+            }
+
+            /* if you have the URL of a font, you can set it below */
+            /* feel free to delete this if it's not your vibe */
+
+            /* this seems like a lot for just one font and I would have to agree 
+    but I wanted to include an example of how to include a custom font.
+    If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Nunito;
+                src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            body {
+                font-family: 'Nunito', sans-serif;
+                margin: 0;
+                background-color: #08031A;
+                /* you can delete the line below if you'd prefer to not use an image */
+                background-size: auto;
+                color: #fceaff;
+                background-image: var(--body-bg-image);
+                background-attachment: fixed;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+
+            /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #ffffff;
+                font-weight: bold;
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+            #header {
+                width: 100%;
+                background-color: #5e4e8c;
+                /* header color here! */
+                height: 150px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+
+            /* navigation section!! */
+            #navbar {
+                height: 40px;
+                background-color: #13092D;
+                /* navbar color */
+                width: 100%;
+                border-top: solid 1px white;
+                border-bottom: solid 1px white;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #ED64F5;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a49cba;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: #000000b6;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #00000077;
+                flex: 1;
+                padding: 20px;
+                order: 2;
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: #000000;
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #ffffff;
+                font-family: "Futura BK";
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #ED64F5;
+            }
+
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #000000;
+                border: 1px solid #ffffff;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: black;
+            }
+
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+    </body>
+</html>
