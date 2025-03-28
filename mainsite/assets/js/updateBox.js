@@ -1,7 +1,7 @@
-let updateTitle = "New site design!!!!"
+let updateTitle = "New Banners Added!"
 document.getElementById("updateTitle").innerHTML = updateTitle;
 
-let data = ["Using sadgrl's layout generator, thank you sadgrl.", "Made some attempts at porting stuff from the old design here, such as the marquees.", "Removed the pile of long-dead crack smoking ponys."];
+let data = ["New Raidou Kuzunoha themed banners and logos, Raidou Remaster coming, get hyped.",];
         let list = document.getElementById("updateList");
         for (i = 0; i < data.length; ++i) {
             let li = document.createElement('li');

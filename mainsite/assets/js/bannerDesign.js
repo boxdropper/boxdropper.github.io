@@ -16,6 +16,8 @@ var logoImages = new Array("assets/images/homeBanner/logos/SYLENTH.webp",
 "assets/images/homeBanner/logos/marathon.webp",
 "assets/images/homeBanner/logos/shogo.webp",
 "assets/images/homeBanner/logos/persona3.webp",
+"assets/images/homeBanner/logos/raidou.webp",
+"assets/images/homeBanner/logos/raidouRemaster.webp",
 );
 
 var bgImages = new Array("assets/images/homeBanner/backgrounds/SYLENTH.webp",
@@ -33,6 +35,8 @@ var bgImages = new Array("assets/images/homeBanner/backgrounds/SYLENTH.webp",
     "assets/images/homeBanner/backgrounds/marathon.webp",
     "assets/images/homeBanner/backgrounds/shogo.webp",
     "assets/images/homeBanner/backgrounds/persona3.webp",
+    "assets/images/homeBanner/backgrounds/raidou.webp",
+    "assets/images/homeBanner/backgrounds/raidouRemaster.webp",
     );
 
 function choosePic() {
