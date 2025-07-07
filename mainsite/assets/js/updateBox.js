@@ -1,7 +1,7 @@
-let updateTitle = "New Domain Name!"
+let updateTitle = "Autoplaying music!"
 document.getElementById("updateTitle").innerHTML = updateTitle;
 
-let data = ["Had I known that it was this easy, I would've done it sooner, but hey, it's here now!",];
+let data = ["No, you can't adjust the volume, deal with it.",];
         let list = document.getElementById("updateList");
         for (i = 0; i < data.length; ++i) {
             let li = document.createElement('li');
