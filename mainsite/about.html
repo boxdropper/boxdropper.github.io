@@ -20,40 +20,6 @@
         <!-- and now the main event -->
     </head>
     <body>
-        <iframe width="0" height="0" src="https://www.youtube.com/embed/4Zi36VC6n50//?&;amp;;autoplay=1&;loop=1&;controls=1" title="Menu Theme - TRON 2.0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: none;"></iframe> <!-- Ear-splitting music that will autoplay, unless the browser is either ancient or lacking in support for YouTube embeds, or the user blocked it, fuck it, also no, you can't adjust the volume because YouTube doesn't have any URL operators for volume control. -->
-        <script>
-            // Script pulled from megidolaon.gay
-
-            var html5_audiotypes={ //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
-                "mp3": "audio/mpeg"
-            }
-
-            function createsoundbite(sound){
-                var html5audio=document.createElement('audio')
-                if (html5audio.canPlayType){ //check support for HTML5 audio
-                    for (var i=0; i<arguments.length; i++){
-                        var sourceel=document.createElement('source')
-                        sourceel.setAttribute('src', arguments[i])
-                        if (arguments[i].match(/\.(\w+)$/i))
-                            sourceel.setAttribute('type', html5_audiotypes[RegExp.$1])
-                        html5audio.appendChild(sourceel)
-                    }
-                    html5audio.load()
-                    html5audio.playclip=function(){
-                        html5audio.pause()
-                        html5audio.currentTime=0
-                        html5audio.play()
-                    }
-                    return html5audio
-                }
-                else{
-                    return {playclip:function(){throw new Error("Your browser doesn't support HTML5 audio unfortunately")}}
-                }
-            }
-
-            var hoversound=createsoundbite("assets/sounds/killer7cursor.mp3");
-            hoversound.volume = 0.3
-        </script>
         <div id="container"><div id="topBar" style="height: 38px;"><marquee id="marqueePhrases" behavior="scroll" scrollamount="15" width="880px">if you're reading this, either you're computer is too old to run javascript fast enough, or the marquee broke!</marquee></div>
             <div id="headerArea">
                 <div id="header" style="height: 253px;">
