@@ -1,0 +1,11 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link.active {
+    background-color: rgb(109, 0, 64) !important;
+}
