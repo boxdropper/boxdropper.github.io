@@ -25,54 +25,61 @@
         <!-- and now the main event -->
     </head>
     <body>
-        <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 5rem; min-height: 100vh; background-color: black !important;" data-bs-theme="dark">
-           <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SYLENTH">
-            <img class="pe-none" width="40" height="62" aria-hidden="true" src="assets/images/logos/boxdropper_white.webp">
-            <span class="visually-hidden">SYLENTH</span>
-           </a>
-           <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-            <li class="nav-item">
-                <a href="/" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-title="Home">
-                    <i class="bi bi-house-door" style="font-size: 1.5rem;">
-                        <use xlink:href="#home"></use>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a href="about" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="About" data-bs-title="About">
-                    <i class="bi bi-person-square" style="font-size: 1.5rem;">
-                        <use xlink:href="#about"></use>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a href="blog" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Blog" data-bs-title="Blog">
-                    <i class="bi bi-book" style="font-size: 1.5rem;">
-                        <use xlink:href="#blog"></use>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a href="downloads" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Downloads" data-bs-title="Downloads">
-                    <i class="bi bi-download" style="font-size: 1.5rem;">
-                        <use xlink:href="#downloads"></use>
-                    </i>
-                </a>
-            </li>
-            <li>
-                <a href="other" class="nav-link py-4 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Other" data-bs-title="Other">
-                    <img src="assets/images/logos/marathon_body_white.webp" class="pe-none" width="29" height="29">
-                        <use xlink:href="#other"></use>
-                    </img>
-                </a>
-            </li>
-           </ul>
-           <div class="dropdown border-top">
-            <p id="beat-hero" class="pt-3 text-center" style="color: white; font-weight: bold;"></p>
-           </div>
-        </div>
+        <main class="d-flex flex-nowrap">
+            <!-- Sidebar Start -->
+            <div class="d-flex flex-column flex-shrink-0 bg-body-tertiary" style="width: 5rem; min-height: 100vh; background-color: black !important;" data-bs-theme="dark">
+            <a href="/" class="d-block p-3 link-body-emphasis text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="SYLENTH">
+                <img class="pe-none" width="40" height="62" aria-hidden="true" src="assets/images/logos/boxdropper_white.webp">
+                <span class="visually-hidden">SYLENTH</span>
+            </a>
+            <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-title="Home">
+                        <i class="bi bi-house-door" style="font-size: 1.5rem;">
+                            <use xlink:href="#home"></use>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="about" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="About" data-bs-title="About">
+                        <i class="bi bi-person-square" style="font-size: 1.5rem;">
+                            <use xlink:href="#about"></use>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Blog" data-bs-title="Blog">
+                        <i class="bi bi-book" style="font-size: 1.5rem;">
+                            <use xlink:href="#blog"></use>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="downloads" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Downloads" data-bs-title="Downloads">
+                        <i class="bi bi-download" style="font-size: 1.5rem;">
+                            <use xlink:href="#downloads"></use>
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="other" class="nav-link py-4 border-bottom rounded-0" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Other" data-bs-title="Other">
+                        <img src="assets/images/logos/marathon_body_white.webp" class="pe-none" width="29" height="29">
+                            <use xlink:href="#other"></use>
+                        </img>
+                    </a>
+                </li>
+            </ul>
+            <div class="dropdown border-top">
+                <p id="beat-hero" class="pt-3 text-center" style="color: white; font-weight: bold;"></p>
+            </div>
+            </div>
+            <!-- Sidebar End -->
+            <!-- Main Header Start -->
+            <div></div>
+            <!-- Main Header End -->
+        </main>
     <!-- Bootstrap Core JS -->
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
