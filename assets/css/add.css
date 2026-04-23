@@ -3,10 +3,30 @@ body {
     background-color: rgb(32, 32, 32);
 }
 
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
 .nav-link {
     color: white !important;
 }
 
 .nav-link.active {
     background-color: rgb(109, 0, 64) !important;
+}
+
+/* Nearest Neighbour (or close equivalent) scaling for cirno fumo, thanks to Phrogz on Stack Overflow */
+.cirno-fumo {
+    image-rendering:optimizeSpeed;             /* Legal fallback */
+    image-rendering:-moz-crisp-edges;          /* Firefox        */
+    image-rendering:-o-crisp-edges;            /* Opera          */
+    image-rendering:-webkit-optimize-contrast; /* Safari         */
+    image-rendering:optimize-contrast;         /* CSS3 Proposed  */
+    image-rendering:crisp-edges;               /* CSS4 Proposed  */
+    image-rendering:pixelated;                 /* CSS4 Proposed  */
+    -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
 }
