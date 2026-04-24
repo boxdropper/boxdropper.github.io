@@ -1,6 +1,9 @@
 body {
     font-family: 'Inter', sans-serif !important;
     background-color: rgb(32, 32, 32);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -29,4 +32,10 @@ p {
     image-rendering:crisp-edges;               /* CSS4 Proposed  */
     image-rendering:pixelated;                 /* CSS4 Proposed  */
     -ms-interpolation-mode:nearest-neighbor;   /* IE8+           */
+}
+
+@media only screen and (max-width: 1280px) {
+    body {
+        background-image: none;
+    }
 }
