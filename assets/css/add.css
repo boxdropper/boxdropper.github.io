@@ -30,6 +30,26 @@ p {
     background-color: rgb(109, 0, 64) !important;
 }
 
+details {
+    color: white;
+}
+
+details a {
+    color: white;
+}
+
+span {
+    color: white;
+}
+
+.blog-media-left {
+    margin-right: 10px;
+}
+
+.blog-media-right {
+    margin-left: 10px;
+}
+
 /* Nearest Neighbour (or close equivalent) scaling for cirno fumo, thanks to Phrogz on Stack Overflow */
 .cirno-fumo {
     image-rendering:optimizeSpeed;             /* Legal fallback */
