@@ -50,6 +50,10 @@ span {
     margin-left: 10px;
 }
 
+.blog-media-center {
+    margin-bottom: 15px;
+}
+
 /* Nearest Neighbour (or close equivalent) scaling for cirno fumo, thanks to Phrogz on Stack Overflow */
 .cirno-fumo {
     image-rendering:optimizeSpeed;             /* Legal fallback */
